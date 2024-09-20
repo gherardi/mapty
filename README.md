@@ -13,7 +13,7 @@ Clone the repository:
 
 ```sh
 git clone https://github.com/gherardi/mapty.git
-cd jobs-finder
+cd mapty
 ```
 
 Install dependencies:
