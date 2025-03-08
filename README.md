@@ -1,4 +1,4 @@
-## Mapty react
+## Mapty
 
 ### Overview
 
@@ -17,8 +17,8 @@ Mapty is a dynamic web application designed to help users effortlessly track, vi
 Clone the repository:
 
 ```sh
-git clone https://github.com/gherardi/mapty-react.git
-cd mapty-react
+git clone https://github.com/gherardi/mapty.git
+cd mapty
 ```
 
 Install dependencies:
