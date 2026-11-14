@@ -38,3 +38,9 @@ npm run dev
 
 Open your browser:
 Navigate to http://localhost:5173 to see the application in action.
+
+### Usage
+
+To create your first workout, click anywhere on the map. A form will appear, allowing you to choose the workout type and add its details, such as distance, duration, cadence, or elevation gain.
+
+Once saved, the workout is added to the map as a marker and displayed in the workout list.
