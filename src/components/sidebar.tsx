@@ -10,7 +10,7 @@ export function Sidebar() {
 		<div className='h-svh p-8 pt-12 flex flex-col bg-muted/40'>
 			<SidebarHeader />
 
-			<div className='mt-8 flex-grow overflow-y-auto space-y-5 border-b'>
+			<div className='mt-8 grow overflow-y-auto space-y-5 border-b'>
 				{workouts
 					.sort(
 						(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()

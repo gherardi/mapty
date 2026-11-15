@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useMap } from 'react-leaflet';
-import { useToast } from '@/hooks/use-toast';
+import { toast } from 'sonner';
 import useMapStore from '@/stores/map-store';
 import useLocationStore, {
 	UserGeoLocationStatus,
@@ -9,8 +9,6 @@ import useLocationStore, {
 export function MapGeolocationHandler() {
 	const map = useMap();
 	const setMap = useMapStore((state) => state.setMap);
-
-	const { toast } = useToast();
 
 	useEffect(() => {
 		setMap(map);
@@ -27,10 +25,8 @@ export function MapGeolocationHandler() {
 						});
 					},
 					function () {
-						toast({
-							title: 'Unable to get your location',
+						toast.error('Unable to get your location', {
 							description: 'Please allow location access to continue',
-							variant: 'destructive',
 						});
 						useLocationStore.setState({
 							userLocationStatus: UserGeoLocationStatus.ERROR,
@@ -39,7 +35,7 @@ export function MapGeolocationHandler() {
 				);
 		};
 		getLocation();
-	}, [map, toast]);
+	}, [map, setMap]);
 
 	return null;
 }

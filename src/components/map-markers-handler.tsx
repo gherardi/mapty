@@ -10,7 +10,7 @@ export function MapMarkersHandler() {
 				return (
 					<Marker position={workout.coords}>
 						<Popup>
-							<p className='font-medium !mb-1'>
+							<p className='font-medium mb-1!'>
 								{workout.type.replace(
 									workout.type[0],
 									workout.type[0].toUpperCase()

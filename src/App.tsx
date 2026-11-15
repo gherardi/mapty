@@ -2,7 +2,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 
 import { Sidebar } from '@/components/sidebar';
 import { Map } from '@/components/map';
-import { Toaster } from '@/components/ui/toaster';
+import { Toaster } from '@/components/ui/sonner';
 
 export default function App() {
 	return (

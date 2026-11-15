@@ -130,7 +130,7 @@ export function WorkoutForm({ open, setOpen }: WorkoutFormProps) {
 												onValueChange={field.onChange}
 												defaultValue={field.value}
 											>
-												<SelectTrigger>
+												<SelectTrigger className='w-full'>
 													<SelectValue placeholder='Select workout type' />
 												</SelectTrigger>
 
